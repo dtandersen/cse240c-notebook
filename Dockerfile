@@ -4,6 +4,7 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 
 USER root
 
-RUN apt-get -y install g++ make
+RUN apt-get update && \
+    apt-get -y install g++ make
 
 USER jovyan
